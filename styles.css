@@ -1,0 +1,200 @@
+
+/*Estilos generales*/
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+ul li a{
+    color: #04F5FF;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+ul li a:hover{
+    color: #38003C;
+    font-size: medium;
+    background:#04F5FF;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+header{
+    background-color: #38003C;
+    border-bottom: #04F5FF;
+    position: sticky;
+    top: 0px;
+    padding: 30px;
+}
+.logo{
+    height: 30px;
+}
+.logo img{
+    height: 50px;
+    padding: 10px;
+    float: left;
+}
+ul{
+    text-align: right;
+}
+ul li {
+    list-style: none;
+    font-size: 0.8rem;
+    display: inline;
+    margin: 0px 10px;
+}
+footer{
+    background-color: #38003C;
+    padding: 30px;
+    text-align: center;
+    border-top: 0.5px solid #04F5FF; 
+}
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+@media (max width:700px){
+    
+    header {
+        flex-direction: column;
+    }
+}
+/*index*/
+
+/*titulo de index*/
+.h1titulo {
+    text-align: right;
+    font-size: 40px;
+}
+/*fondo index*/
+.fondo-index{
+    background-color: #38003C;
+}
+.boton-hablemos{
+    border: none;
+    background: #04F5FF;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.boton-hablemos :hover{
+    transition: 1s;
+}
+/*titulo de trabajos*/
+.titulo-trabajos{
+    text-align: left;
+}
+.foto-portada img{
+    width: 100%;
+    height: 500px;
+}
+
+.section-1{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+
+.main-image{
+    width: 50%;
+}
+.section-1 p {
+color: white;
+flex-direction: column;
+font-size: 1.3rem;
+padding: 30px 30px;
+}
+.boton-hablemos{
+    padding: 10px;
+    margin: 30px;
+}
+.section-1 .h1titulo {
+color: white;
+padding: 0%;
+}
+.titulo-section-1{
+    display: inline-block;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*galeria trabajos*/
+.galeria-trabajos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 40px;
+}
+.galeria-trabajos img {
+    width: 350px;
+    height: 350px;
+    }
+
+/*quienes-somos*/
+.foto-quienes-somos{
+    width: 60%;
+    height: 500px;
+    margin: 20px;
+}
+.quienes-somos-container{
+    display: flex;
+    align-items: center;
+}
+.quienes-somos-container p {
+    font-size: 1.0rem;
+    padding: 0px 20px;
+    color: white;
+}
+.fondo-quienes-somos{
+    background-color: #38003C;
+}
+/*contacto*/
+.fondo-contacto{
+    background-color: #38003C;
+}
+.contacto-conteiner{
+    max-width: 500px;
+    margin: 10px;
+    display: flex;
+}
+.contacto-conteiner img{
+    width: 130%;
+}
+.contacto-conteiner label{
+    display: block;
+    color: white;
+}
+.contacto-conteiner input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+.contacto-conteiner ::placeholder{
+    padding: 5px;
+}
+.caja-formulario{
+    font-family: sans-serif;
+    padding: 20px;
+    display: block;
+}
+.caja-formulario label{
+    padding: 20px;
+}
+.caja-formulario * {
+    box-sizing: border-box;
+    line-height: 1.5rem;
+}
+.form-items{
+    display: flex;
+    flex-direction: column;
+}
+.form-items input{
+    width: 100%;
+    max-width: 425px;
+}
