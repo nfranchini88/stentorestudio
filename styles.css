@@ -28,6 +28,21 @@ header{
     top: 0px;
     padding: 30px;
 }
+header img{
+    animation: ease-in animacion 1s;
+
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
 .logo{
     height: 30px;
 }
