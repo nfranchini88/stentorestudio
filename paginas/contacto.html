@@ -12,7 +12,7 @@
 <body class="fondo-contacto">
     <header>
         <div class="logo">
-            <img src="img/stentor-blanco.png" alt="logo">
+            <img src="../img/stentor-blanco.png" alt="logo">
         </div>
         <nav class="menu-nav">
             <ul>
@@ -23,23 +23,28 @@
             </ul>
         </nav> 
     </header>
-    <main>
-        <section class="contacto-conteiner">
-            <img src="../img/firmbee-com-SpVHcbuKi6E-unsplash.jpg" alt="foto-contacto">
-            <form class="caja-formulario" action="" method="" enctype="">
-                <div class="form-items">
-                    <label for="nombre">Ingrese sus datos de contacto</label>
-                    <input type="text" class="ingreso-nombre" id="nombre" placeholder="Ingrese su nombre" />
-                    <input type="email" class="ingreso-correo" placeholder="Ingrese su correo" />
-                    <input type="telefono" class="ingreso-telefono" placeholder="Numero de telefono" />
-                </div>
-                <div class="check">
-                    <input type="checkbox" id="terminos" />
-                    <label for="terminos">Acepto términos y condiciones</label>
-                </div>     
-                <br />
-                <button>Enviar</button>
-            </form>
+    <main class="contacto-main">
+        <h2 class="sub-title">Dejanos tus datos de contacto</h2>
+        <section>
+            <form class="form-container">
+                <fieldset class="form-container--fieldset">
+                    <div>Datos de contacto</div>
+                    <br>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre">
+                    <br>
+                    <label for="mail">Correo Electronico</label>
+                    <input type="text" name="mail">
+                    <br>
+                    <br>
+                    <div>Términos y condiciones</div>
+                    <br>
+                    <input type="checkbox" name="aceptar" value="si" /> Acepto
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>    
         </section>
     </main>
     <footer>

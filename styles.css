@@ -98,10 +98,7 @@ footer ul{
 .boton-hablemos :hover{
     transition: 1s;
 }
-/*titulo de trabajos*/
-.titulo-trabajos{
-    text-align: left;
-}
+
 .foto-portada img{
     width: 100%;
     height: 500px;
@@ -146,6 +143,10 @@ padding: 0%;
     justify-items: center;
     padding: 40px;
 }
+/*titulo de trabajos*/
+.titulo-trabajos{
+    text-align: left;
+}
 .galeria-trabajos img {
     width: 350px;
     height: 350px;
@@ -173,43 +174,38 @@ padding: 0%;
 .fondo-contacto{
     background-color: #38003C;
 }
-.contacto-conteiner{
-    max-width: 500px;
-    margin: 10px;
+.form-container{
     display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    padding: 30px;
 }
-.contacto-conteiner img{
-    width: 130%;
-}
-.contacto-conteiner label{
-    display: block;
-    color: white;
-}
-.contacto-conteiner input{
-    width: 200px;
-    height: 30px;
+.form-container--fieldset{
+    padding: 20px;
+    background:white;
+    color: #38003C;
     border-radius: 5px;
+    border: 1px solid #04F5FF
 }
-.contacto-conteiner ::placeholder{
-    padding: 5px;
+.contact-title{
+    text-align: right;
 }
-.caja-formulario{
-    font-family: sans-serif;
-    padding: 20px;
-    display: block;
+.sub-title{
+    color: #04F5FF;
+    margin: 30px;
 }
-.caja-formulario label{
-    padding: 20px;
+.contacto-main{
+    height: 70vh;
 }
-.caja-formulario * {
-    box-sizing: border-box;
-    line-height: 1.5rem;
+
+
+
+@media only screen and (max-width:768px){
+
 }
-.form-items{
-    display: flex;
-    flex-direction: column;
-}
-.form-items input{
-    width: 100%;
-    max-width: 425px;
+
+@media only screen and (max-width:576px){
+    .header {
+        flex-direction: column;
+    }
 }
