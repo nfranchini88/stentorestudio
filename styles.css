@@ -9,7 +9,7 @@
 body {
     font-family: 'Rubik', sans-serif;
 }
-ul li a{
+/*ul li a{
     color: #04F5FF;
     text-decoration: none;
     padding: 5px 20px;
@@ -19,7 +19,21 @@ ul li a:hover{
     font-size: medium;
     background:#04F5FF;
     border-radius: 20px;
-    transition: 0.3s;
+    transition: 0.1s;
+} */
+
+.navbar{
+    width: 100%;
+}
+
+.nav-link{
+    color: #04F5FF;
+    
+}
+
+
+.navbar-collapse{
+    flex-grow: initial;
 }
 header{
     background-color: #38003C;
@@ -71,6 +85,14 @@ footer ul{
     justify-content: space-evenly;
     color: white;
 }
+.bi{
+    font-size: 1.5rem;
+    color: #04F5FF;
+}
+.bi:hover{
+    color: white;
+}
+
 @media (max width:700px){
     
     header {
@@ -131,7 +153,18 @@ padding: 0%;
     display: inline-block;
     align-items: center;
     flex-direction: column;
+}
+.section-2{
+    display: flex;
+    align-items: center;
+    gap: inherit;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
 
+.card{
+    align-items: center;
 }
 
 /*galeria trabajos*/
